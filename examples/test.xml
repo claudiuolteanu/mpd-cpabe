@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Representation bandwidth="4190760" codecs="avc1.640028" height="1080" id="1" mimeType="video/mp4" width="1920">
+  <BaseURL>car_cenc-20120827-89.mp4</BaseURL>
+  <AttributesGroup OperatorType="Logical"  OperatorValue="OR">  
+    <AttributesGroup OperatorType="Logical"  OperatorValue="AND">
+      <Attribute>
+        <Name> sysadmin </Name>
+        <Value> * </Value>
+        <Operator> = </Operator>
+      </Attribute>
+      <AttributesGroup OperatorType="Logical"  OperatorValue="OR">
+        <Attribute>
+          <Name> hire_date  </Name>
+          <Value> 946702800 </Value>
+          <Operator> &#60; </Operator>
+        </Attribute>
+        <Attribute>
+          <Name> team </Name>
+          <Value> * </Value>
+          <Operator> = </Operator>
+        </Attribute>
+      </AttributesGroup>
+    </AttributesGroup>
+    <AttributesGroup OperatorType="Logical"  OperatorValue="AND">
+      <Attribute>
+        <Name> business_staff </Name>
+        <Value> * </Value>
+        <Operator> = </Operator>
+      </Attribute>
+      <AttributesGroup OperatorType="Composition"  OperatorValue="2">
+        <Attribute>
+          <Name> exec_level </Name>
+          <Value> 5 </Value>
+          <Operator> &#62;= </Operator>
+        </Attribute>
+        <Attribute>
+          <Name> group </Name>
+          <Value> * </Value>
+          <Operator> = </Operator>
+        </Attribute>
+        <Attribute>
+          <Name> strat_team </Name>
+          <Value> * </Value>
+          <Operator> = </Operator>
+        </Attribute>
+      </AttributesGroup>
+    </AttributesGroup>
+  </AttributesGroup>
+</Representation>
